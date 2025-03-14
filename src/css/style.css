@@ -845,7 +845,7 @@ p {
 
 .video-section {
     width: 100%;
-    height: 537px;
+    height: 575px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -859,18 +859,23 @@ p {
     box-sizing: border-box;
 }
 
-.video-container iframe {
-    width: 80%;
-    height: 575px;
-    object-fit: cover;
+.video-fade {
+    opacity: 0;
+    transform: scale(0.95);
+    animation: zoomInFade 1.5s ease-out forwards;
+    will-change: transform, opacity;
 }
 
-.video-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+@keyframes zoomInFade {
+    from {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
-
 
 .services-procedures-heading {
     font-family: 'DM Serif Display', serif;
@@ -924,6 +929,15 @@ p {
   }
   .hero-1-bg {
     padding: 80px 0;
+}
+.video-container iframe {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+.video-section {
+  height: auto;
+  margin-bottom:120px
 }
 }
 
@@ -1276,4 +1290,294 @@ p {
   .navbar-toggler {
     display: none; /* Hide on desktop */
   }
+}
+
+.hero-1-bg h1 {
+    color: #003566;
+}
+
+/* Desktop styles (default) */
+.hero-title {
+    text-align: left;
+}
+
+.hero-title h1,
+.hero-title p,
+.hero-title .btn {
+    text-align: left;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .hero-1-bg h1 {
+        font-size: 35px !important; /* Set hero section heading to 35px on mobile */
+    }
+    .services-procedures-section .services-procedures-heading,
+    .milestones-section h2,
+    .follow-us-section h2 {
+        font-size: 28px !important; /* Set other section headings to 20px on mobile */
+        text-align: center; /* Center section headings on mobile */
+    }
+    .achieve-section .achieve-section-heading {
+        font-size: 35px !important; /* Set achieve section heading to 35px on mobile */
+    }
+    .hero-title {
+        text-align: center; /* Center text in hero section on mobile */
+    }
+    .hero-title h1,
+    .hero-title p,
+    .hero-title .btn {
+        text-align: center; /* Center headings, text, and buttons in hero section */
+    }
+}
+
+/* Animation Keyframes */
+@keyframes flyInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes flyInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Hero Section Animations */
+.hero-1-bg .mt-5 {
+    opacity: 0;
+    animation: flyInFromLeft 1.5s ease-out forwards;
+}
+
+.hero-1-bg .hero-title {
+    opacity: 0;
+    animation: flyInFromRight 1.5s ease-out forwards;
+}
+
+/* Services & Procedures Section Animations */
+.services-heading-animate {
+    opacity: 0;
+    animation: flyInFromLeft 1.5s ease-out forwards;
+}
+
+.services-img-animate {
+    opacity: 0;
+    transform: translateX(50px);
+    animation: fadeInRight 1.5s ease-out forwards;
+}
+
+.services-img-animate:nth-child(2) { animation-delay: 0.3s; }
+.services-img-animate:nth-child(3) { animation-delay: 0.6s; }
+.services-img-animate:nth-child(4) { animation-delay: 0.9s; }
+.services-img-animate:nth-child(5) { animation-delay: 1.2s; }
+
+.services-btn-animate {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1.5s ease-out forwards;
+    animation-delay: 1.5s;
+}
+
+/* Achieve Section Animations */
+.achieve-col-animate {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1.5s ease-out forwards;
+}
+
+.achieve-col-animate:nth-child(2) { animation-delay: 0.3s; }
+.achieve-col-animate:nth-child(3) { animation-delay: 0.6s; }
+
+.achieve-btn-animate {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1.5s ease-out forwards;
+    animation-delay: 0.9s;
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation Durations */
+.services-heading-animate { animation-duration: 1.5s; }
+.services-img-animate { animation-duration: 1.5s; }
+.services-btn-animate { animation-duration: 1.5s; }
+.achieve-col-animate { animation-duration: 1.5s; }
+.achieve-btn-animate { animation-duration: 1.5s; }
+.milestone-animate { animation-duration: 1.5s; }
+.follow-left-animate { animation-duration: 1.5s; }
+.follow-right-animate { animation-duration: 1.5s; }
+.video-fade { animation-duration: 1.5s; }
+
+/* Update individual animation declarations */
+.services-heading-animate { animation: flyInFromLeft 1.5s ease-out forwards; }
+.services-img-animate { animation: fadeInRight 1.5s ease-out forwards; }
+.achieve-col-animate { animation: fadeInUp 1.5s ease-out forwards; }
+.milestone-animate { animation: fadeInLeft 1.5s ease-out forwards; }
+.follow-left-animate { animation: fadeInLeft 1.5s ease-out forwards; }
+.follow-right-animate { animation: fadeInRight 1.5s ease-out forwards; }
+
+/* Milestone Section Animations */
+.milestone-animate {
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: fadeInLeft 1.5s ease-out forwards;
+}
+
+.milestone-animate:nth-child(2) { animation-delay: 0.4s; }
+.milestone-animate:nth-child(3) { animation-delay: 0.8s; }
+.milestone-animate:nth-child(4) { animation-delay: 1.2s; }
+.milestone-animate:nth-child(5) { animation-delay: 1.6s; }
+
+/* Follow Section Animations */
+.follow-left-animate {
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: fadeInLeft 1.5s ease-out forwards;
+}
+
+.follow-right-animate {
+    opacity: 0;
+    transform: translateX(50px);
+    animation: fadeInRight 1.5s ease-out forwards;
+}
+
+.follow-us-section .social-icons img {
+    transition: transform 0.5s ease;
+}
+
+.follow-us-section .social-icons img:hover {
+    transform: scale(1.1);
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Base state for animated elements */
+.services-procedures-heading,
+.services-procedures-img,
+.additional-procedures-btn,
+.achieve-section-col,
+.achieve-section-button,
+.timeline-item,
+.follow-left,
+.follow-right,
+.video-fade {
+    visibility: hidden;
+    opacity: 0;
+}
+
+/* Animation classes */
+.services-heading-animate,
+.services-img-animate,
+.services-btn-animate,
+.achieve-col-animate,
+.achieve-btn-animate,
+.milestone-animate,
+.follow-left-animate,
+.follow-right-animate,
+.video-fade {
+    visibility: visible;
+}
+
+/* Adjust animation timing */
+.services-heading-animate { animation: flyInFromLeft 1.5s ease-out forwards; }
+.services-img-animate { animation: fadeInRight 1.5s ease-out forwards; }
+.achieve-col-animate { animation: fadeInUp 1.5s ease-out forwards; }
+.milestone-animate { animation: fadeInLeft 1.5s ease-out forwards; }
+.follow-left-animate { animation: fadeInLeft 1.5s ease-out forwards; }
+.follow-right-animate { animation: fadeInRight 1.5s ease-out forwards; }
+
+/* Follow Section Styles & Animations */
+.follow-left,
+.follow-right {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.follow-left-animate {
+    visibility: visible;
+    animation: fadeInLeft 1.5s ease-out forwards;
+}
+
+.follow-right-animate {
+    visibility: visible;
+    animation: fadeInRight 1.5s ease-out forwards;
+}
+
+.follow-us-section .social-icons img {
+    width: 143px;
+    height: 140px;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+.follow-us-section .social-icons img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .follow-us-section .social-icons img {
+        width: 25%;
+        height: 100px;
+    }
+}
+
+/* Services Section Button Animation */
+.services-procedures-heading.services-heading-animate ~ .row + .text-center .additional-procedures-btn {
+    visibility: visible;
+    animation: fadeInUp 1.5s ease-out forwards;
+    animation-delay: 1.2s; /* Delay after images finish animating */
+}
+
+/* Achieve Section Button Animation */
+.achieve-section-col.achieve-col-animate ~ .achieve-section-buttons-row .achieve-section-button {
+    visibility: visible;
+    animation: fadeInUp 1.5s ease-out forwards;
+    animation-delay: 0.9s; /* Delay after columns finish animating */
+}
+
+/* Da Vinci Section Button Animation */
+.services-procedures-heading.services-heading-animate ~ .row + .davinci-section-buttons-row .achieve-section-button {
+    visibility: visible;
+    animation: fadeInUp 1.5s ease-out forwards;
+    animation-delay: 1.2s; /* Delay after images finish animating */
 }
