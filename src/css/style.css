@@ -860,7 +860,7 @@ p {
 }
 
 .video-container iframe {
-    width: 100%;
+    width: 75%;
     height: 537px;
     object-fit: cover;
 }
