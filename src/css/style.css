@@ -948,6 +948,54 @@ p {
 .add-proced-row{
   margin-top:20px;
 }
+    .services-procedures-section .row {
+        display: none; /* Hide the original row on mobile */
+    }
+    .services-procedures-section .services-slider {
+        display: block; /* Display the slider on mobile */
+    }
+    .services-slider {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    .services-slider .slider-track {
+        display: flex;
+        transition: transform 0.5s ease;
+        gap: 10px; /* Add spacing between images */
+    }
+    .services-slider .slider-item {
+        min-width: calc(50% - 10px); /* Show two items per screen with spacing */
+        box-sizing: border-box;
+    }
+    .services-slider .slider-item img {
+        width: 100%;
+        height: auto;
+    }
+    .services-slider .slider-nav {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);
+    }
+    .services-slider .slider-nav button {
+        background: rgba(0, 0, 0, 0.5);
+        border: none;
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 769px) {
+    .services-procedures-section .services-slider {
+        display: none; /* Hide the slider on desktop */
+    }
+    .services-procedures-section .row {
+        display: flex; /* Show the original row on desktop */
+    }
 }
 
 .achieve-section {

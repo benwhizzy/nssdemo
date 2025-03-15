@@ -70,6 +70,31 @@ document.addEventListener('DOMContentLoaded', function() {
     ).forEach(element => {
         observer.observe(element);
     });
+
+    // Slider functionality for Services & Procedures section on mobile
+    const sliders = document.querySelectorAll('.services-slider');
+    sliders.forEach(slider => {
+        const track = slider.querySelector('.slider-track');
+        const items = slider.querySelectorAll('.slider-item');
+        const prevButton = slider.querySelector('.slider-nav .prev');
+        const nextButton = slider.querySelector('.slider-nav .next');
+        let currentIndex = 0;
+
+        function updateSlider() {
+            const offset = -currentIndex * (50 + 10); // Adjust offset for two items per screen with spacing
+            track.style.transform = `translateX(${offset}%)`;
+        }
+
+        prevButton.addEventListener('click', function() {
+            currentIndex = (currentIndex > 0) ? currentIndex - 1 : Math.ceil(items.length / 2) - 1;
+            updateSlider();
+        });
+
+        nextButton.addEventListener('click', function() {
+            currentIndex = (currentIndex < Math.ceil(items.length / 2) - 1) ? currentIndex + 1 : 0;
+            updateSlider();
+        });
+    });
 });
 
 // Animation Observer
