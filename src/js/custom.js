@@ -2,9 +2,9 @@
 
 function playVideo() {
     document.querySelector('.video-thumbnail').style.display = 'none';
-    const videoIframe = document.getElementById('google-drive-video');
-    videoIframe.style.display = 'block';
-    videoIframe.src = videoIframe.src + "&autoplay=1";
+    const videoElement = document.getElementById('local-video');
+    videoElement.style.display = 'block';
+    videoElement.play();
 }
 
 document.addEventListener('DOMContentLoaded', function() {

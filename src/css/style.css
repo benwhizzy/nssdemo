@@ -48,7 +48,7 @@ p {
 }
 .navbar-custom .navbar-nav li a {
   line-height: 36px;
-  color: #8e9cb1;
+  color: #2558ab; /* Changed from #8e9cb1 to #2558ab */
   font-size: 20px;
   transition: all 0.3s;
   background-color: rgba(0, 0, 0, 0) !important;
@@ -64,13 +64,15 @@ p {
 .navbar-custom .navbar-nav li a,
 .navbar-custom .navbar-nav li a:focus,
 .navbar-custom .navbar-nav li a:active {
-  color: #8e9cb1 !important;
+  color: #2558ab !important; /* Changed from #8e9cb1 to #2558ab */
 }
-.navbar-custom .navbar-nav li.active a,
+.navbar-custom .navbar-nav li.active a {
+  color: #2558ab !important;
+}
 .navbar-custom .navbar-nav li a:hover,
 .navbar-custom .navbar-nav li a:focus,
-.navbar-custom .navbar-nav li a:active {
-  color: #2558ab !important;
+.navbar-custom .navbar-nav li a:active{
+  color:#ffffff;
 }
 .navbar-custom .navbar-toggles {
   padding: 0 !important;
@@ -121,7 +123,7 @@ p {
   margin-top: 0px;
 }
 .nav-sticky.navbar-custom .navbar-nav li a {
-  color: #8b99ae !important;
+  color: #2558ab !important; /* Changed from #8b99ae to #2558ab */
 }
 .nav-sticky.navbar-custom .navbar-nav li.active a,
 .nav-sticky.navbar-custom .navbar-nav li a:hover,
@@ -159,7 +161,7 @@ p {
   }
   .navbar-custom .navbar-nav li a {
     transition: all 0.4s;
-    color: #9da9bb !important;
+    color: #2558ab !important; /* Changed from #9da9bb to #2558ab */
     margin: 0px;
   }
   .navbar-custom .navbar-nav li.active a {
@@ -1584,7 +1586,7 @@ p {
 
 .google-drive-video-section {
     width: 100%;
-    height: 600px;
+    height: 700px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1631,5 +1633,32 @@ p {
 @media (max-width: 768px) {
     .google-drive-video-section {
         height: 300px;
+    }
+}
+
+.navbar-custom .dropdown-menu {
+    width: 350px; /* Set width to 350px on desktop */
+    border-radius: 0; /* Remove border-radius */
+    border: none; /* Remove border line */
+}
+
+.navbar-custom .dropdown-menu .dropdown-item {
+    color: #004380; /* Set text color to #004380 */
+}
+li.dropdown-item a.dropdown-link:hover {
+    color: #ffffff !important; /* Set text color to #ffffff on hover */
+}
+
+.navbar-custom .dropdown-menu .dropdown-item:hover {
+    background-color: #004380; /* Set background color to #004380 on hover */
+    color: #ffffff !important; /* Set text color to #ffffff on hover */
+}
+.navbar-custom .dropdown-menu .dropdown-link a:hover {
+  color: #ffffff !important; /* Set text color to #ffffff on hover */
+}
+
+@media (max-width: 768px) {
+    .navbar-custom .dropdown-menu {
+        width: 100%; /* Full width on mobile */
     }
 }
