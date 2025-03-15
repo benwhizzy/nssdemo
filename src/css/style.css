@@ -903,6 +903,10 @@ p {
     margin-right: 0;
 }
 
+.add-proced-row{
+    margin-top:120px;
+}
+
 .additional-procedures-btn {
     width: 213px;
     height: 48px;
@@ -930,7 +934,7 @@ p {
       margin-top:0px;
   }
   .hero-1-bg {
-    padding: 80px 0;
+    padding: 80px 0px 40px 0px;
 }
 .video-container iframe {
   width: 100%;
@@ -939,8 +943,15 @@ p {
 }
 .video-section {
   height: auto;
-  margin-bottom:120px
+  margin-bottom:40px;
 }
+.add-proced-row{
+  margin-top:20px;
+}
+}
+
+.achieve-section {
+  margin-bottom: 120px;
 }
 
 .achieve-section-col {
@@ -1003,6 +1014,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 120px;
 }
 
 .achieve-section-button {
@@ -1042,10 +1054,27 @@ p {
     .achieve-section-button {
         margin: 10px 0;
     }
+    .achieve-section-bullet {
+      font-size: 14px;
+  }
+  .achieve-section-col {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .achieve-section {
+    margin-bottom: 40px;
+  }
+  .davinci-section-buttons-row {
+    margin-top: 40px;
+  }
 }
 
 .milestones-section {
     text-align: center;
+    margin-bottom:120px;
 }
 
 .timeline {
@@ -1141,6 +1170,10 @@ p {
     .timeline-vertical-line {
       margin-left:10px;
   }
+  .milestones-section {
+    text-align: center;
+    margin-bottom:40px;
+}
 }
 
 .follow-us-section {
@@ -1200,16 +1233,35 @@ p {
     color: #486284;
     margin-left: 15px;
 }
+
+.maps-section iframe {
+  height: 650;
+  object-fit: cover;
+}
+
 @media (max-width: 768px) {
   .follow-us-section .social-icons img {
     width: 25%;
     height: 100px;
  }
  .follow-us-section .col-lg-7 {
-  height: 420px;
+  height: 300px;
+  padding: 40px 40px;
 }
-.follow-us-section img {
+.follow-us-section .col-xs-12 {
+  align-items: center;
+  justify-items: center;
+}
+.follow-us-section .col-lg-5 img {
   width: 100%;
+  height: auto;
+}
+.follow-us-section {
+  margin-bottom: 0px;
+}
+.maps-section iframe {
+  height: 450px;
+  object-fit: cover;
 }
 }
 
@@ -1319,6 +1371,7 @@ p {
     .follow-us-section h2 {
         font-size: 28px !important; /* Set other section headings to 20px on mobile */
         text-align: center; /* Center section headings on mobile */
+        margin-bottom: 20px;
     }
     .achieve-section .achieve-section-heading {
         font-size: 35px !important; /* Set achieve section heading to 35px on mobile */
@@ -1558,8 +1611,8 @@ p {
 
 @media (max-width: 768px) {
     .follow-us-section .social-icons img {
-        width: 25%;
-        height: 100px;
+        width: 20%;
+        height: 70px;
     }
 }
 
