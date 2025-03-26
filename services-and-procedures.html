@@ -1,0 +1,994 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <title>NorthStar Surgery Specialists</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Medical Website">
+    <meta name="keywords" content="Hernia, General surgeon">
+    <meta content="devemmy" name="author">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./src/images/favicon.png">
+
+    <!-- icon -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!--Slider-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="./src/css/style.css" rel="stylesheet" type="text/css">
+
+    <!-- Include Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!--Navbar Start-->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark">
+        <div class="container">
+            <!-- LOGO -->
+            <a class="navbar-brand logo" href="/">
+                <img src="./src/images/logo.png" alt="" class="" height="50">
+            </a>
+            <button class="navbar-toggler p-0 d-flex align-items-center d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" style="border: none; color: #004380;">
+                <ion-icon name="menu-outline"></ion-icon>
+                <span style="font-size: 18px; font-family: 'Economica', sans-serif; margin-left: 5px;">MENU</span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ms-auto navbar-center" id="mySidenav">
+                    <li class="nav-item dropdown active">
+                        <a href="#home" class="nav-link dropdown-toggle" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services & Procedures 
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li class="dropdown-item"><a class="dropdown-link" href="breast-surgery.html">Breast Surgery</a></li>
+                            <li class="dropdown-item"><a class="dropdown-link" href="#">Colorectal Surgery</a></li>
+                            <li class="dropdown-item"><a class="dropdown-link" href="#">Hernia Surgery</a></li>
+                            <li class="dropdown-item"><a class="dropdown-link" href="#">Gall Bladder Surgery</a></li>
+                            <li class="dropdown-item"><a class="dropdown-link" href="#">Da Vinci Robotic Surgery</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#services" class="nav-link dropdown-toggle" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About 
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li class="dropdown-item"><a class="dropdown-link" href="#">Meet Northstar Surgery</a></li>
+                            <li class="dropdown-item"><a class="dropdown-link" href="#">Our Practice</a></li>
+                            <li class="dropdown-item"><a class="dropdown-link" href="#">Our Surgeons</a></li>
+                            <li class="dropdown-item"><a class="dropdown-link" href="#">Our Staff</a></li>
+                            <li class="dropdown-item"><a class="dropdown-link" href="#">Cutting-edge Modern Surgery</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">Patient Resources </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#features" class="nav-link">Patient Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#clients" class="nav-link">Contact Us</a>
+                    </li>
+                </ul>
+              
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Secondary Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light secondary-navbar-container d-none d-lg-block">
+        <div class="container">
+            <button class="navbar-toggler d-flex align-items-center d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#secondaryNavbar" aria-controls="secondaryNavbar" aria-expanded="false" aria-label="Toggle navigation" style="border: none; color: #004380; margin-top: 110px;">
+                <ion-icon name="menu-outline"></ion-icon>
+                <span style="font-size: 18px; font-family: 'Economica', sans-serif; margin-left: 5px;">MENU</span>
+            </button>
+            <div class="collapse navbar-collapse" id="secondaryNavbar">
+                <ul class="navbar-nav mx-auto secondary-navbar">
+                    <li class="nav-item active">
+                        <a class="nav-link active" href="#">
+                            <ion-icon name="chatbubble-ellipses-outline" class="nav-icon"></ion-icon> Live Chat
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <ion-icon name="card-outline" class="nav-icon"></ion-icon> Pay Bills
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <ion-icon name="mic-outline" class="nav-icon"></ion-icon> Text-to-Speech
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <ion-icon name="document-text-outline" class="nav-icon"></ion-icon> Contact Form
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <ion-icon name="calendar-outline" class="nav-icon"></ion-icon> Appointment
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <ion-icon name="globe-outline" class="nav-icon"></ion-icon> Patient Referrals
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <ion-icon name="call-outline" class="nav-icon"></ion-icon> (512) 491-6542
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Secondary Navbar End -->
+
+    <!--Hero Start-->
+    <section class="hero-1-bg position-relative d-flex align-items-center text-center" id="home">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-6">
+                    <div class="mt-5 mt-lg-0">
+                        <img src="./src/images/service-hero.png" alt="" class="img-fluid mx-auto d-block hero-image">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-title">
+                        <h1 class="text-capitalize f-14 mb-2 dm-serif-display-regular-italic hero-heading">Our Procedures</h1>
+                        <p class="hero-1-title mb-2 hero-subtitle">-</p>
+                        <p class="text-muted mb-4 pb-2 hero-description">NorthStar Surgery Specialists, P.A. specialize in the diagnosis and treatment of benign and malignant surgical diseases, for both elective and emergent conditions. The practice of General Surgery involves the management of a wide variety of conditions involving multiple systems throughout the entire body.</p>
+                        <a href="" class="btn btn-outline-secondary hero-button"><b>Read More</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Hero Ends-->
+
+    <!-- Reviews Section Start -->
+    <section class="reviews-section" style="margin-bottom: 80px;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="review-slide fly-in-image">
+                        <div class="d-flex justify-content-between">
+                            <img src="./src/images/rating.png" alt="Ratings" class="ratings-img">
+                            <img src="./src/images/quote.png" alt="Quotes" class="quotes-img">
+                        </div>
+                        <div class="review-content pt-3 pb-3">
+                            Many surgical procedures can be done using specialized equipment, such as laparoscopy (minimally invasive surgery) or endoscopy.
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <img src="./src/images/drvineet2.png" alt="Dr. Vineet" class="reviewer-img me-2">
+                            <div>
+                                <strong>Vineet Choudry MD, FACS</strong><br>
+                                <span class="text-muted">General Surgeon, NorthStar Surgery</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Reviews Section End -->
+
+    <!-- Video Section Start -->
+    <section class="service-video-section-1">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="vid-gradient-overlay">
+                    <video class="video-placeholder fade-in-image" autoplay muted loop>
+                        <source src="https://res.cloudinary.com/dswdpteu6/video/upload/v1742292279/3_Operating_Room_Video_Clip_bvtvts.mov" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Video Section End -->
+
+
+    <!-- Chart Section Start -->
+    <section class="chart-section" style="margin-bottom: 80px;">
+        <div class="container">
+            <div class="row justify-content-between align-items-center fade-in-image">
+                <div class="col-md-6">
+                    <h3 style="color: #003566;">Total Procedures</h3>
+                    <h1 id="total-count" style="color: #003566;">121,135</h1>
+                </div>
+                <div class="col-md-6 text-end">
+                    <button class="timeframe-btn" onclick="updateChart('1M')">1M</button>
+                    <button class="timeframe-btn" onclick="updateChart('3M')">3M</button>
+                    <button class="timeframe-btn" onclick="updateChart('6M')">6M</button>
+                    <button class="timeframe-btn" onclick="updateChart('1Y')">1Y</button>
+                </div>
+            </div>
+            <canvas id="lineChart" style="margin-top: 20px; width: 100%; height:450px"></canvas>
+        </div>
+    </section>
+    <!-- Chart Section End -->
+
+    <!-- Video Section Start -->
+    <section class="youtube-video-section" style="margin-bottom: 50px;">
+        <div class="container">
+            <div class="row justify-content-center fade-in-image">
+                <div class="col-12">
+                    <iframe width="100%" height="517" src="https://www.youtube.com/embed/yQmbFR9bc6s" title="*Hernia Surgery Procedure🏥 da Vinci Robotic🤖 Surgery*" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Video Section End -->
+
+    
+    <!-- Da Vinci Robotic Surgery Section Start -->
+    <section class="da-vinci-section">
+        <div class="container">
+            <h2 class="services-procedures-heading">Da Vinci Robotic Surgery</h2>
+            <div class="row g-2">
+                <div class="col-lg-6 col-xs-12">
+                    <img src="./src/images/service-da-vinci-1.png" alt="Da Vinci 1" class="img-fluid fly-in-image grayscale-hover">
+                </div>
+                <div class="col-lg-4 col-xs-6">
+                    <img src="./src/images/robotic-color-2.png" alt="Da Vinci 2" class="img-fluid fly-in-image grayscale-hover">
+                </div>
+                <div class="col-lg-2 col-xs-6">
+                    <img src="./src/images/robotic-color-3.png" alt="Da Vinci 3" class="img-fluid fly-in-image grayscale-hover">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Da Vinci Robotic Surgery Section End -->
+
+    <!-- New Tech Section Start -->
+    <section class="new-tech-section" style="margin-bottom: 80px;">
+        <div class="container">
+            <h2 class="services-procedures-heading new-tech-heading">New Tech, Better Surgery</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="new-tech-text fly-in-image">
+                        Exciting new technology now intimately integrated into the general surgery arena includes da Vinci Robotic Surgery, breast cryoablation, and minimally invasive hemorrhoid surgery.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <p class="new-tech-text fly-in-image">
+                        Our staff of professionals has been trained to perform and can offer to patients all of the procedures listed below:
+                    </p>
+                </div>
+            </div><br><br>
+            <div class="row justify-content-center fade-in-image">
+                <div class="col-12">
+                    <iframe width="100%" height="517" src="https://www.youtube.com/embed/ilBA2edEPu8" title="Robotic-Assisted surgery has transformed healthcare!" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- New Tech Section End -->
+
+    <!-- Advanced Laparoscopy Section Start -->
+    <section class="advanced-laparoscopy-section" style="margin-bottom: 60px;">
+        <div class="container">
+            <h2 class="services-procedures-heading advanced-laparoscopy-heading">Advanced Laparoscopy - Minimally Invasive & Da Vinci Robotic Surgery</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="advanced-laparoscopy-list fly-in-image">
+                        <li>Appendectomy</li>
+                        <li>Cholecystectomy</li>
+                        <li>Hernia Repair (all types)</li>
+                        <li>Nissen Fundoplication</li>
+                        <li>Gastric Resection (all types)</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="advanced-laparoscopy-list fly-in-image">
+                        <li>Colon/Rectal Resection (all types)</li>
+                        <li>Small Bowel Surgery (all types)</li>
+                        <li>Diagnostic Laparoscopy</li>
+                        <li>Splenectomy</li>
+                        <li>Multiple Other Intra-abdominal Procedures</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Advanced Laparoscopy Section End -->
+
+    <!-- Breast Section Start -->
+    <section class="breast-section" style="margin-bottom: 60px;">
+        <div class="container">
+            <h2 class="services-procedures-heading advanced-laparoscopy-heading">Breast (for benign and malignant diseases)</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="advanced-laparoscopy-list fly-in-image">
+                        <li>Breast Biopsy & Ultrasound</li>
+                        <li>Mastectomy – Simple and Modified Radical</li>
+                        <li>Lumpectomy (breast conservation treatment)</li>
+                        <li>Sentinel Lymph Node Biopsy</li>
+                        <li>Axillary Lymph Node Dissection</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="advanced-laparoscopy-list fly-in-image">
+                        <li>Breast Infection/Mastitis, Nipple Discharge, and Accessory Breast Tissue</li>
+                        <li>Cryoablation for Benign and Malignant Breast Disease</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breast Section End -->
+
+    <!-- Hernia Section Start -->
+    <section class="hernia-section" style="margin-bottom: 60px;">
+        <div class="container">
+            <h2 class="services-procedures-heading advanced-laparoscopy-heading">Hernia</h2>
+            <div class="row">
+                <div class="col-md-6 col-xs-6">
+                    <ul class="advanced-laparoscopy-list fly-in-image">
+                        <li>Inguinal (groin) Hernia Repair</li>
+                        <li>Ventral/Incisional Hernia Repair</li>
+                        <li>Umbilical Hernia Repair</li>
+                        <li>Hiatal Hernia Repair</li>
+                        <li>Internal Hernia Repair</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-xs-6">
+                    <ul class="advanced-laparoscopy-list fly-in-image">
+                        <li>Diaphragmatic Hernia Repair</li>
+                        <li>Incarcerated & Strangulated Hernia Repairs</li>
+                        <li>Da Vinci Robotic Hernia Repairs (all types)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hernia Section End -->
+
+    <!-- Video Section Start -->
+    <section class="service-video-section-1">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="vid-gradient-overlay">
+                    <video class="video-placeholder fade-in-image" autoplay muted loop>
+                        <source src="https://res.cloudinary.com/dswdpteu6/video/upload/v1742344626/1_Operating_Scene_Video_Clip_exgnip.mov" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Video Section End -->
+
+    <!-- Gallbladder Start -->
+    <section class="hernia-section" style="margin-bottom: 60px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-xs-6">
+                    <h2 class="services-procedures-heading advanced-laparoscopy-heading">Gallbladder</h2>
+                        <ul class="advanced-laparoscopy-list fly-in-image">
+                            <li>Robotic Cholecystectomy</li>
+                            <li>Intraoperative Cholangiogram</li>
+                            <li>Robotic Common Bile Duct Exploration</li>
+                        </ul>
+                    <h2 class="services-procedures-heading advanced-laparoscopy-heading">Endoscopy</h2>
+                    <ul class="advanced-laparoscopy-list fly-in-image">
+                        <li>Esophago-gastro-duodenoscopy (EGD)</li>
+                        <li>Colonoscopy</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-xs-6">
+                    <h2 class="services-procedures-heading advanced-laparoscopy-heading">Skin and Soft Tissue</h2>
+                    <ul class="advanced-laparoscopy-list fly-in-image">
+                        <li>Lymph Node Biopsy/Dissection</li>
+                        <li>Excision of Skin Lesions (benign)</li>
+                        <li>Excision of Soft Tissue Cysts & Lipomas</li>
+                        <li>Skin Cancer Resection</li>
+                        <li>Skin Grafting</li>
+                        <li>Soft Tissue Ultrasound & Biopsy</li>
+                        <li>Soft Tissue Infection Incision & Drainage & Debridement</li>
+                        <li>Pilonidal Cyst/Sinus Tract Excision (including complex with flap repair)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Gallbladder End -->
+
+    <!-- General Surgery Start -->
+    <section class="hernia-section" style="margin-bottom: 60px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-xs-6">
+                    <h2 class="services-procedures-heading advanced-laparoscopy-heading">General Surgery</h2>
+                        <ul class="advanced-laparoscopy-list fly-in-image">
+                            <li>Exploratory Laparotomy</li>
+                            <li>Emergency Abdominal Surgery</li>
+                            <li>Perforated Bowel</li>
+                            <li>Dead Bowel</li>
+                            <li>Abdominal Infection</li>
+                            <li>Incarcerated/Strangulated Hernia</li>
+                            <li>Splenectomy (spleen removal)</li>
+                            <li>Pancreatic Necrosis Surgery</li>
+                        </ul>
+                          
+                </div>
+                <div class="col-md-6 col-xs-6">
+                    <h2 class="services-procedures-heading advanced-laparoscopy-heading">Cancer Surgery</h2>
+                    <ul class="advanced-laparoscopy-list fly-in-image">
+                        <li>Breast Cancer Procedures</li>
+                        <li>Colon Cancer Procedures</li>
+                        <li>Small Bowel Cancer Procedures</li>
+                        <li>Skin & Soft Tissue Cancer Procedures</li>
+                        <li>Portacath Insertion & Removal</li>
+                            
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- General Surgery End -->
+
+    <!-- Office Based Start -->
+    <section class="hernia-section" style="margin-bottom: 60px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-xs-6">
+                    <h2 class="services-procedures-heading advanced-laparoscopy-heading">Office Based Procedures</h2>
+                        <ul class="advanced-laparoscopy-list fly-in-image">
+                            <li>Diagnostic Ultrasound (breast and soft tissue)</li>
+                            <li>Ultrasound-guided Biopsy (breast and soft tissue)</li>
+                            <li>Simple soft tissue excisions (cyst, lipoma, etc.)</li>
+                            <li>Laceration Repair/Suture Removal</li>
+                            <li>Small Abscess drainage</li>
+                            <li>Skin Biopsy Wound Care</li>
+                        </ul>
+                             
+                </div>
+                <div class="col-md-6 col-xs-6">
+                    <h2 class="services-procedures-heading advanced-laparoscopy-heading">General Surgery</h2>
+                    <ul class="advanced-laparoscopy-list fly-in-image">
+                        <li>Trauma</li>
+                        <li>Critical Care</li>
+                        <li>Tracheostomy</li>
+                        <li>Central Line</li>
+                        <li>Chest Tube</li>
+                        <li>Ventilator Management/Hemodynamic Monitoring/Sepsis Treatment</li>
+                        <li>PEG Tube (feeding tube)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Office Based End -->
+
+    <!-- Special Training Section Start -->
+    <section class="special-training-section" style="margin-bottom: 60px;">
+        <div class="container">
+            <h2 class="services-procedures-heading advanced-laparoscopy-heading">Special Training</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="advanced-laparoscopy-list fly-in-image">
+                        <li>Transanal Hemorrhoidal Dearterialization (THD – Hemorrhoid Procedure)</li>
+                        <li>da Vinci Robotic Surgery</li>
+                        <li>Minimally Invasive Fellowship Training</li>
+                        <li>Breast cryoablation procedures</li>
+                    </ul>
+                       
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Special Training Section End -->
+
+    <!-- Services & Procedures Section Start -->
+    <section class="services-procedures-section" style="margin-bottom: 60px;">
+        <div class="container">
+            <h2 class="services-procedures-heading">Services & Procedures</h2>
+            <div class="row">
+                <div class="col-lg col-md-4 col-sm-6 col-xs-12 position-relative">
+                    <img src="./src/images/davinci-color-1.png" alt="Service 1" class="img-fluid services-procedures-img grayscale-hover">
+                    <div class="image-caption">Colorectal Surgery</div>
+                </div>
+                <div class="col-lg col-md-4 col-sm-6 col-xs-12 position-relative">
+                    <img src="./src/images/service-color-2.png" alt="Service 2" class="img-fluid services-procedures-img grayscale-hover">
+                    <div class="image-caption">Breast Surgery</div>
+                </div>
+                <div class="col-lg col-md-4 col-sm-6 col-xs-12 position-relative">
+                    <img src="./src/images/service-color-3.png" alt="Service 3" class="img-fluid services-procedures-img grayscale-hover">
+                    <div class="image-caption">Hernia Repair</div>
+                </div>
+                <div class="col-lg col-md-4 col-sm-6 col-xs-12 position-relative">
+                    <img src="./src/images/service-color-4.png" alt="Service 4" class="img-fluid services-procedures-img grayscale-hover">
+                    <div class="image-caption">Gallbladder Surgery</div>
+                </div>
+                <div class="col-lg col-md-4 col-sm-6 col-xs-12 position-relative">
+                    <img src="./src/images/service-color-5.png" alt="Service 5" class="img-fluid services-procedures-img grayscale-hover">
+                    <div class="image-caption">da Vinci Robotic Surgery</div>
+                </div>
+            </div>
+            <div class="services-slider d-lg-none">
+                <div class="slider-track">
+                    <div class="slider-item">
+                        <img src="./src/images/service-color-1.png" alt="Service 1">
+                    </div>
+                    <div class="slider-item">
+                        <img src="./src/images/service-color-2.png" alt="Service 2">
+                    </div>
+                    <div class="slider-item">
+                        <img src="./src/images/service-color-3.png" alt="Service 3">
+                    </div>
+                    <div class="slider-item">
+                        <img src="./src/images/service-color-4.png" alt="Service 4">
+                    </div>
+                    <div class="slider-item">
+                        <img src="./src/images/service-color-5.png" alt="Service 5">
+                    </div>
+                </div>
+                <div class="slider-nav">
+                    <button class="prev">‹</button>
+                    <button class="next">›</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services & Procedures Section End -->
+
+    <!-- Surgery Images Section Start -->
+    <section class="surgery-images-section" style="margin-bottom: 60px;">
+        <div class="container">
+            <div class="row g-2">
+                <div class="col-md-6 col-xs-12">
+                    <img src="./src/images/surgery-1.png" alt="Surgery 1" class="img-fluid fade-in-image grayscale-hover">
+                </div>
+                <div class="col-md-6 col-xs-12">
+                    <img src="./src/images/surgery-2.png" alt="Surgery 2" class="img-fluid fade-in-image grayscale-hover">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Surgery Images Section End -->
+
+    <!-- Robotic Surgery Image Section Start -->
+    <section class="robotic-surgery-image-section" style="margin-bottom: 80px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img src="./src/images/choudry-robotic.png" alt="Robotic Surgery" class="img-fluid fade-in-image">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Robotic Surgery Image Section End -->
+
+    <!-- Achieve Section Start -->
+    <section class="achieve-section">
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-md-4 col-xs-12 achieve-section-col first">
+                    <h4 class="achieve-section-heading">International</h4>
+                    <p class="achieve-section-bullet">• CASE OBS DESTINATION</p>
+                </div>
+                <div class="col-md-4 col-xs-12 achieve-section-col second">
+                    <h4 class="achieve-section-heading">National</h4>
+                    <p class="achieve-section-bullet">• INTUITIVE PROCTOR</p>
+                </div>
+                <div class="col-md-4 col-xs-12 achieve-section-col third">
+                    <h4 class="achieve-section-heading">Trained</h4>
+                    <p class="achieve-section-bullet">• OTHER AUSTIN SURGEONS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Achieve Section End -->
+
+    <!-- Experience Section Start -->
+    <section class="experience-section" style="margin-bottom: 80px;">
+        <div class="container">
+            <div class="row align-items-center d-flex">
+                <div class="col-md-7 d-flex align-items-stretch">
+                    <img src="./src/images/choudry-robotic-2.png" alt="Dr. Choudhry Robotic" class="img-fluid fade-in-image">
+                </div>
+                <div class="col-md-5 d-flex flex-column">
+                    <h2 class="services-procedures-heading" style="margin-top: 20px;">Dr. Choudhry's Experience</h2>
+                    <div class="experience-item">
+                        <h4 class="achieve-section-heading fade-in-image first">2013</h4>
+                        <p class="achieve-section-bullet fade-in-image first">• TRAINED IN ROBOTIC SURGERY</p>
+                    </div>
+                    <div class="experience-item">
+                        <h4 class="achieve-section-heading fade-in-image second">3200+</h4>
+                        <p class="achieve-section-bullet fade-in-image second">• ROBOTIC SURGERY CASES TILL DATE</p>
+                    </div>
+                    <div class="experience-item">
+                        <h4 class="achieve-section-heading fade-in-image third">*</h4>
+                        <p class="achieve-section-bullet fade-in-image third">• TOTAL ROBOTIC PRACTICE SURGEON</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Experience Section End -->
+
+    <!-- Robotic Experience Section Start -->
+    <section class="robotic-experience-section" style="margin-bottom: 80px;">
+        <div class="container">
+            <h2 class="services-procedures-heading robotic-experience-heading" style="margin-bottom: 50px;">Dr. Choudhry's Robotic Surgery Teaching Experience</h2>
+            <div class="row g-3 robotic-experience">
+                <div class="col-md-4 col-xs-12 achieve-section-col first">
+                    <h4 class="achieve-section-heading" style="line-height: 40px;">TR200, 300 & 400</h4>
+                    <p class="achieve-section-bullet">• INTUITIVE TRAINING COURSES</p>
+                </div>
+                <div class="col-md-4 col-xs-12 achieve-section-col second">
+                    <h4 class="achieve-section-heading">Presentation</h4>
+                    <p class="achieve-section-bullet">• (ROBOTIC) AMERICAN COLLEGE OF SURGEONS</p>
+                </div>
+                <div class="col-md-4 col-xs-12 achieve-section-col third">
+                    <h4 class="achieve-section-heading">2021</h4>
+                    <p class="achieve-section-bullet">• "CONNECT UP" PRESENTATION</p>
+                </div>
+            </div>
+            <div class="row g-3 yellow-background">
+                <div class="col-md-4 col-xs-12 achieve-section-col first">
+                    <h4 class="achieve-section-heading" style="line-height: 40px;">2022</h4>
+                    <p class="achieve-section-bullet">• HERNIA NIGHT IN AMERICA</p>
+                </div>
+                <div class="col-md-4 col-xs-12 achieve-section-col second">
+                    <h4 class="achieve-section-heading">2022</h4>
+                    <p class="achieve-section-bullet">• ROBOTIC SURGERY COLLABORATION APPENDECTOMY PRESENTATION</p>
+                </div>
+                <div class="col-md-4 col-xs-12 achieve-section-col third">
+                    <h4 class="achieve-section-heading">2021</h4>
+                    <p class="achieve-section-bullet">• INTUITIVE TEACHING PRESENTATION AT MULTIPLE LOCATIONS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Robotic Experience Section End -->
+
+    <!-- Da Vinci Systems Section Start -->
+    <section class="da-vinci-systems-section" style="margin-bottom: 80px;">
+        <div class="container">
+            <h2 class="services-procedures-heading new-tech-heading">Da Vinci Systems</h2>
+            <div class="row">
+                <div class="col-12">
+                    <p class="new-tech-text fade-in-image">
+                        Da Vinci systems give the surgeon precision, flexibility, and control to perform many types of procedures, while also offering real-time feedback so the surgeon can operate with confidence. These smart systems and instruments have been developed by Intuitive with the goal of being able to reduce variability in surgery and deliver better overall surgical care. The utilization of the Intuitive da Vinci system allows the NorthStar Surgery specialists to provide modern cutting edge surgical care.
+                    </p>
+                </div>
+            </div>
+            <br><br>
+            <div class="row justify-content-center fade-in-image" style="margin-bottom: 80px;">	
+                <div class="col-12">
+                    <iframe width="100%" height="517" src="https://www.youtube.com/embed/12Af-PgBBRk" title="Robotic-Assisted surgery has transformed healthcare!" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div><br><br>
+            <!-- New Two-Column Layout -->
+            <div class="row align-items-center">
+                <!-- Left Column -->
+                <div class="col-md-7">
+                    <div class="video-thumbnail position-relative" style="height: 500px; cursor: pointer;" onclick="playDaVinciVideo()">
+                        <img src="./src/images/robotic-thumbnail.png" alt="Robotic Thumbnail" class="img-fluid w-100 h-100 fade-in-image" style="object-fit: cover;">
+                        <div class="overlay position-absolute w-100 h-100" style="top: 0; left: 0; background: rgba(0, 0, 0, 0.5);"></div>
+                        <div class="play-button position-absolute" style="top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 64px; color: rgba(255, 255, 255, 0.8);">
+                            <ion-icon name="play-circle-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <video id="da-vinci-video" width="100%" height="500" style="display: none;" controls>
+                        <source src="https://res.cloudinary.com/dswdpteu6/video/upload/v1742390429/robotic-surgery_th4jqy.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <!-- Right Column -->
+                <div class="col-md-5 robotic-heading">
+                    <h2 class="services-procedures-heading" style="text-align: left;">Total Robotic Practice</h2>
+                    <div class="text-start text-md-start text-center">
+                        <button class="achieve-section-button">Watch Interview</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Da Vinci Systems Section End -->
+
+    <!-- Muresanu Experience Section Start -->
+    <section class="muresanu-experience-section">
+        <div class="container">
+            <h2 class="services-procedures-heading robotic-experience-heading" style="margin-bottom: 50px;">Dr. Muresanu’s Robotic Surgery Experience</h2>
+            <div class="row g-3 robotic-experience">
+                <div class="col-md-4 col-xs-12 achieve-section-col first">
+                    <h4 class="achieve-section-heading" style="line-height: 40px;">2023</h4>
+                    <p class="achieve-section-bullet">• TRAINED IN ROBOTIC SURGERY</p>
+                </div>
+                <div class="col-md-4 col-xs-12 achieve-section-col second">
+                    <h4 class="achieve-section-heading">TR200</h4>
+                    <p class="achieve-section-bullet">• COURSE COMPLETION</p>
+                </div>
+                <div class="col-md-4 col-xs-12 achieve-section-col third">
+                    <h4 class="achieve-section-heading">20+</h4>
+                    <p class="achieve-section-bullet">• ROBOTIC SURGERY CASES PER MONTH</p>
+                </div>
+            </div>
+            <div class="row g-3 yellow-background muresanu">
+                <div class="col-lg-6 col-xs-12 achieve-section-col first">
+                    <h4 class="achieve-section-heading" style="line-height: 40px;">150+</h4>
+                    <p class="achieve-section-bullet">• ROBOTIC SURGERY CASES TO DATE</p>
+                </div>
+                <div class="col-lg-6 col-xs-12 achieve-section-col second">
+                    <h4 class="achieve-section-heading">*</h4>
+                    <p class="achieve-section-bullet">• TOTAL ROBOTIC PRACTICE SURGEON</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Muresanu Experience Section End -->
+
+    <!-- Robotic Surgery Image Section Start -->
+    <section class="robotic-surgery-image-section" style="margin-bottom: 80px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img src="./src/images/muresanu.png" alt="Doctor Muresanu" class="img-fluid fade-in-image">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Robotic Surgery Image Section End -->
+
+    <!-- Appointments Section Start -->
+    <section class="appointments-section" style="margin-bottom: 80px;">
+        <div class="container">
+            <div class="row">
+                <!-- Left Column -->
+                <div class="col-md-6">
+                    <img src="./src/images/appointments.png" alt="Appointments" class="appointments-image fade-in-image">
+                </div>
+                <!-- Right Column -->
+                <div class="col-md-6 appointments-content">
+                    <h2 class="services-procedures-heading appointments-heading">Learn more about what to expect</h2>
+                    <div class="text-start text-md-start text-center">
+                        <button class="achieve-section-button">Read More</button>
+                    </div>
+                    <h3 class="services-procedures-heading smaller-heading">Learn more about Da Vinci Robotic Systems</h3>
+                    <div class="text-start text-md-start text-center">
+                        <button class="achieve-section-button">Read More</button>
+                    </div>
+                    <h3 class="services-procedures-heading smaller-heading">Da Vinci Systems</h3>
+                    <p class="appointments-description">The utilization of the Intuitive da Vinci system allows the NorthStar Surgery specialists to provide modern cutting edge surgical care.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Appointments Section End -->
+
+    <!-- New Section Start -->
+    <section class="new-section" style="margin-bottom: 80px;">
+        <div class="container">
+            <div class="row g-0">
+                <!-- First Column -->
+                <div class="col-md-4 position-relative">
+                    <img src="./src/images/drvineet2.jpg" alt="Dr. Vineet" class="img-fluid">
+                    <button class="btn btn-primary position-absolute" style="margin: 20px 20px; bottom: 0; left: 0;">View Profile</button>
+                </div>
+                <!-- Second Column -->
+                <div class="col-md-4 d-flex align-items-center" style="padding: 30px 60px; background-color: #ffffff;">
+                    <h3 style="text-align: center;">*<br>Call us at NorthStar Surgery Today to Book your Appointment</h3>
+                </div>
+                <!-- Third Column -->
+                <div class="col-md-4 position-relative">
+                    <img src="./src/images/drmoresanu.jpg" alt="Dr. Moresanu" class="img-fluid">
+                    <button class="btn btn-primary position-absolute" style="margin: 20px 20px; bottom: 0; right: 0;">View Profile</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- New Section End -->
+
+    <!-- Milestones Section Start -->
+    <section class="milestones-section">
+        <div class="container">
+            <h2 class="services-procedures-heading text-center">Our Milestones.</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3><b>2008</b></h3>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-vertical-line"></div>
+                        <p>Dr. Choudhry founded NorthStar Surgery Specialists, PA</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content reverse">
+                        <p>Awarded Stanford’s Who’s Who and America’s Top Surgeons</p>
+                        <div class="timeline-vertical-line"></div>
+                        <div class="timeline-dot"></div>
+                        <h3><b>2020</b></h3>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3><b>2022</b></h3>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-vertical-line"></div>
+                        <p>Became a Fellow of the American College of Surgeons</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content reverse">
+                        <p>Dr. Cristina Muresanu Joined NorthStar Surgery</p>
+                        <div class="timeline-vertical-line"></div>
+                        <div class="timeline-dot"></div>
+                        <h3><b>2023</b></h3>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3><b>2024</b></h3>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-vertical-line"></div>
+                        <p>Successfully Performed 3000+ Robotic Surgeries</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Milestones Section End -->
+
+    <!-- Google Drive Video Section Start -->
+    <section class="google-drive-video-section">
+        <div class="video-thumbnail" onclick="playVideo()">
+            <img src="./src/images/video-thumbnail.png" alt="Video Thumbnail" class="img-fluid">
+            <div class="overlay"></div>
+            <div class="play-button">
+                <ion-icon name="play-circle-outline"></ion-icon>
+            </div>
+        </div>
+        <video id="local-video" width="100%" height="700" style="display:none;" controls>
+            <source src="./src/images/virtual_tour.webm" type="video/webm" width="100%">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+    <!-- Google Drive Video Section End -->
+
+    <!-- Follow Us Section Start -->
+    <section class="follow-us-section">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-lg-5 col-xs-12 follow-left">
+                    <img src="./src/images/follow-section-1.png" alt="Follow Us">
+                </div>
+                <div class="col-lg-7 col-xs-12 follow-right">
+                    <h2>Follow the Star</h2>
+                    <div class="social-icons">
+                        <img src="./src/images/follow-google.png" alt="Google">
+                        <img src="./src/images/follow-button.png" alt="Button">
+                        <img src="./src/images/follow-yelp.png" alt="Yelp">
+                        <img src="./src/images/follow-fb.png" alt="Facebook">
+                    </div>
+                    <button class="btn btn-button">Follow</button>
+                    <button class="btn btn-outline-button">Review</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Follow Us Section End -->
+
+    <section>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3440.996736364624!2d-97.70653862553074!3d30.407834474742618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644cea00a3afa9d%3A0xfcf0dc2201bf30ab!2sNorthStar%20Surgery%20Specialists%2C%20PA!5e0!3m2!1sen!2sng!4v1741821327627!5m2!1sen!2sng" class="maps-section" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!-- footer Start -->
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="mb-4">
+                        <a href="layout-one-1.html"><img src="./src/images/logo.png" alt="" class="logo-dark" height="50"></a>
+                        <h6 class="footer-list-title mb-3"><b>Provider Resources</b></h6>
+                        <ul class="list-unstyled company-sub-menu">
+                            <li><a href="">Insurance</a></li>
+                            <li><a href="">Refer a Patient</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h6 class="footer-list-title mb-3"><b>Conditions & Procedures</b></h6>
+                            <ul class="list-unstyled company-sub-menu">
+                                <li><a href="">All Procedures</a></li>
+                                <li><a href="">FAQs</a></li>
+                                <li><a href="">Help Articles</a></li>
+                                <li><a href="">Report and issue</a></li>
+                                <li><a href="">Contact Help Desk </a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h6 class="footer-list-title mb-3"><b>Specialties</b></h6>
+                            <ul class="list-unstyled company-sub-menu">
+                                <li><a href="">Colorectal Surgery</a></li>
+                                <li><a href="">Breast Surgery</a></li>
+                                <li><a href="">Hernia Repairs</a></li>
+                                <li><a href="">Gallbladder Surgery</a></li>
+                                <li><a href="">Da Vinci Robotic Surgery</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h6 class="footer-list-title mb-3"><b>Patient Resources</b></h6>
+                            <ul class="list-unstyled company-sub-menu">
+                                <li><a href="">Patient Registration Form</a></li>
+                                <li><a href="">ES: Patient Registration Form</a></li>
+                                <li><a href="">Pre-Op Instructions</a></li>
+                                <li><a href="">Post-Op Instructions</a></li>
+                            </ul>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row d-flex justify-content-center align-items-center ">
+                        <div class="col-md-2">
+                            <h6 class="footer-list-title mb-3 text-left" style="color: #B0B0B0;">Follow us on social media for more...</h6>
+                        </div>
+                        <div class="col-md-8">
+                            <hr style="color: #004280;">
+                        </div>
+                        <div class="col-md-2">
+                            <ul class="list-unstyled footer-social-list mt-4 d-flex justify-content-center gap-3">
+                               
+                                <ion-icon name="logo-facebook" class="footer-social-icons"></ion-icon>   
+                                <ion-icon name="logo-instagram" class="footer-social-icons"></ion-icon>   
+                                <ion-icon name="logo-linkedin" class="footer-social-icons"></ion-icon>   
+                                <ion-icon name="logo-youtube" class="footer-social-icons"></ion-icon>   
+                                <ion-icon name="logo-twitter" class="footer-social-icons"></ion-icon>                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- <div class="col-lg-12 ">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h6 class="footer-list-title text-dark mb-3">Follow us on social media for more...</h6>
+                        </div>
+                        <div class="col-md-6">
+                           <hr style="color: #004280;">
+                        </div>
+                        <div class="col-md-3">
+                            
+                            <ul class="list-unstyled footer-social-list mt-4">
+                                <li class="list-inline-item"><a href="#"><i class="mdi mdi-facebook"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="mdi mdi-instagram"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="mdi mdi-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!-- footer End -->
+     <!-- javascript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script src="js/scrollspy.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <!-- Counter js -->
+    <script src="js/counter.int.js"></script>
+    <!-- carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Main Js -->
+    <script src="js/app.js"></script>
+    <!-- Custom Js -->
+    <script src="./src/js/custom.js"></script>
+    </body>
+    </html>
